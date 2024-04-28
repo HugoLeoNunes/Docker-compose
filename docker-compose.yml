@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3'
+services:
+  backend:
+    build: ./LFBackAvancado
+    ports:
+      - "5000:5000"
+  frontend:
+    build: ./LFFrontBasico
+    ports:
+      - "80:80"
